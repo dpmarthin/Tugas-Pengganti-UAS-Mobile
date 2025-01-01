@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:mobile_tubes/firebase_options.dart';
+import 'package:mobile_tubes/hello_world.dart';
 import '/Service/notification_service.dart';
 import 'login.dart';
 import 'register.dart';
@@ -400,6 +401,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const UserHome(),
+      // home: const HelloWorld(),
       routes: {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegistrationScreen(),
